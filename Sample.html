@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="icon" type="" href="Mandirigma Logo(1).jpg">
+  <link rel="stylesheet" href="Sample.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+<div class="bgimage">
+
+
+  <form name="login" method=POST ACTION="" onclick="return check(form)">
+  <div class="bgform">
+   <center> <img src="Mandirigma Logo(1).jpg" alt="Avatar" class="avatar">
+   <p style="color:white"><b>Welcome, Amigos!</b></p>
+   </center>
+	
+	
+  <div class="label">
+	
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="userid" required>
+	  
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pswrd" required>
+        
+    <button type="submit" onclick="check(this.form)" value="login"/>Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  
+
+  <div class="container" style="background-none">
+    <button type="reset" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+	
+	<script>
+        function focusInput() {
+            document.getElementById("userid").focus();
+        }
+    </script>
+	 </div>
+	 
+	 
+	 <br>
+        <!-- <label>or</label><br> -->
+        <center><label class="loginwith">Or</label><br></center>
+		 <center><label class="loginwith">Sign In With</label></center><br>
+		 
+        <div class="log1">
+            <div class="logg">
+                <img src="https://i.postimg.cc/QNQ90f1X/google.png" class="logg-img"> <a href="https://www.google.com/" target="_blank">
+                <label class="logg-txt">Google</label>
+            </div>
+            <div class="logf">
+                <img src="https://i.postimg.cc/RVv38wLw/facebook.png" class="logf-img"> <a href="https://www.facebook.com/" target="_blank">
+                <label class="logf-txt">Facebook</label>
+		
+            </div>
+        </div><br>
+    </div>
+        
+    </div>
+	 
+	
+	</div>
+</div>
+
+</form>
+
+
+
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+  {
+    window.open('https://lightbearer.home.blog')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   window.alert("Error Password or Username");
+		document.login.userid.focus();
+		return false;
+  }
+}
+
+</script>
+
+</body>
+
+</div>
+
+
+
+</html>
